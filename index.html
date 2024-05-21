@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var userCity = prompt('Enter Your City')
+        if (userCity === 'Karachi') {
+            alert ('Welcome to City of Lights')
+        } 
+
+        var userGender = prompt('Enter Yor Gender')
+        if (userGender === 'Male') {
+            alert ('Good Morning Sir!')
+        }else  {
+            alert ('Good Morning Maam')
+        }
+
+
+        var signalColor = prompt ('Enter Signal Color')
+if (signalColor === 'Red'){
+    alert ('Must Stop')
+}else if (signalColor === 'Yellow'){
+    alert ('Ready to Move')
+}else if (signalColor === 'Green'){
+    alert('Move Now')
+}
+
+
+document.write('<br> <h1> Mark Sheet </h1> <br>  ')
+
+var totalmarks = +prompt('Enter Your Total Marks')
+var obtainedMarks = +prompt('Enter Your Obtained Marks') 
+
+
+var percentage = obtainedMarks / totalmarks * 100
+
+document.write(`Total Marks : ${totalmarks} <br> obtained Marks : ${obtainedMarks} <br>`)
+document.write (` Percentage : ${percentage}% <br>`)
+if (percentage >= 80 ){
+    document.write (`Your Grade is : A+ <br> Remarks : Exellent`)
+} else if (percentage >= 70 ){
+    document.write (`Your Grade is : A <br> Remarks : Very Goog`)
+} else if (percentage >= 60 ){
+    document.write (`Your Grade is : B <br> Remarks : Good`)
+} else if (percentage >= 45 ){
+    document.write (`Your Grade is : C <br> Remarks : Need to improve`)
+} else if (percentage >= 0 ){
+    document.write (`Your Grade is : Fail <br> Remarks : Very Bad <br> <b\r>`)
+}
+
+
+var odevNum = +prompt ('Enter a Number') 
+
+if (odevNum % 2 === 0){
+    document.write(`${odevNum} is a Even number`)
+} else  {
+    document.write(`${odevNum} is a odd number`)
+}
+
+
+var secNum = prompt ('Enter a Character')
+
+if (secNum >= 1 && 100 >= secNum ) {
+    document.write(`<br> <br> Bingo Write a Correct Num`)
+}else if (secNum >= 'A' && 'Z' >= secNum ) {
+    document.write(`<br> <br> Bingo Write a wrong Num`)
+}else if (secNum >= 'a' && 'z' >= secNum ) {
+    document.write(`<br> <br> Bingo Write a wrong Num`)
+}
+
+var tem = +prompt ('Enter a Tempurature value')
+
+
+if (tem >= 40) {
+    document.write (`<br><br> Tempurature Its too hot outside`)
+} else if (tem >= 30) {
+    document.write (`<br><br> Tempurature Its hot outside`)
+} else if (tem >= 20 ) {
+    document.write (`<br><br> Tempurature Its normal outside`)
+}else if (tem >= 10 ) {
+    document.write (`<br><br> Tempurature Its Very cold`)
+}
+
+
+
+document.write('<h1> Calculater </h1>')
+
+
+var firstNum = +prompt('Enter a First Number')
+var secondNum = +prompt('Enter a Second Numer')
+var operaSign = prompt('Enter a Operator Element')
+
+
+if (operaSign == '+'){
+    document.write('<br> The Resul is Here : ',(firstNum + secondNum))
+} else if (operaSign == '-'){
+    document.write('<br> The Resul is Here : ',(firstNum - secondNum))
+} else if (operaSign == '%'){
+    document.write('<br> The Resul is Here : ',(firstNum % secondNum))
+} else if (operaSign == '*'){
+    document.write('<br> The Resul is Here : ',(firstNum * secondNum))
+} else (operaSign == '/'); {
+    document.write('<br> The Resul is Here : ',(firstNum / secondNum))
+} 
+
+
+
+
+    </script>
+    
+</body>
+</html>
